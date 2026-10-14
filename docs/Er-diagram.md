@@ -3,7 +3,7 @@ erDiagram
    USER ||--o{ POST : writes
    USER ||--o{ COMMENT : writes
    USER ||--o{ COMMENT : has
-   User {
+   USER {
         bigint id PK
         varchar username UK "not null"
         varchar email UK "not null"
@@ -13,7 +13,7 @@ erDiagram
         timestamp updated_at
 }
 
-    Post {
+    POST {
         bigint id PK
         varchar title "not null"
         text content "not null"
